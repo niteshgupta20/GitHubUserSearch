@@ -15,6 +15,8 @@ function User() {
   useEffect(() => {
     getUser(params.login);
     getUserRepos(params.login);
+
+    // eslint-disable-next-line
   }, []);
 
   const {
@@ -25,7 +27,6 @@ function User() {
     bio,
     blog,
     twitter_username,
-    login,
     html_url,
     followers,
     following,
